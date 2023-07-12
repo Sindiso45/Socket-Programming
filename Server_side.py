@@ -6,9 +6,7 @@ def consume_data(filename):
     # Parse XML file and retrieve data
     tree = ET.parse(filename)
     root = tree.getroot()
-    
-    # Extract the data you need from the XML file
-    # For example, if you want to retrieve the student's name:
+
     name_element = root.find('Name')
     name = name_element.text
 
